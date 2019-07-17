@@ -1,0 +1,9 @@
+target examples : https://myapp.vlab.sapbydesign.com
+
+
+GET localhost:5050/https://myapp.vlab.sapbydesign.com/sap/c4c/odata/v1/memoactivity/ActivityCollection(%2700116C1%27)
+var request = new RestRequest(Method.GET);
+request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+request.AddHeader("X-Requested-With", "XMLHttpRequest");
+request.AddHeader("x-csrf-token", "fetch");
+request.AddHeader("Authorization", "Basic UAcatZT1E=");
